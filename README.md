@@ -34,4 +34,18 @@ Use `MacOSFactory` — creates a `MacOSButton` and a `MacOSCheckbox`.
 
 `Main` accepts a delivery mode (`ROAD` or `SEA`) and a UI platform (`WINDOWS` or `MACOS`) through command-line arguments or console input.
 
+**How to run**
+
+Compile from the `assignment2` folder with JDK 17:
+
+`New-Item -ItemType Directory -Force out`
+
+`javac --release 17 -d out (Get-ChildItem -Path src/main/java -Recurse -Filter *.java)`
+
+Run an example:
+
+`java -cp out app.Main ROAD WINDOWS`
+
+Other supported combinations are `SEA WINDOWS`, `ROAD MACOS` and `SEA MACOS`.
+
 Ramin293
